@@ -32,6 +32,14 @@ width: 100%;
 overflow: hidden; 
 height: 350px;
 } 
+@media handheld{
+	.parallaxContainer{
+position: relative;
+width: 100%;
+overflow: hidden; 
+height: 200px;
+} 
+}
 .parallaxTextContainer{
  float:right;
 }
@@ -107,6 +115,7 @@ width:50%;
 color:white; 
 line-height: 50px;
 }
+
 .headerLinksContainer span{
 	font-family: 'Gafata', sans-serif;
 display: inline-block;
