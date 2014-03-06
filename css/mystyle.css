@@ -6,8 +6,7 @@
 .parallaxContainer{
 position: relative;
 width: 100%;
-overflow: hidden;
-top: -350px;
+overflow: hidden; 
 height: 800px;
 }
 body{ 
