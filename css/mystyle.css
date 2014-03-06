@@ -81,8 +81,7 @@ border-top:2px solid white;
  
 .statementContainer{
 text-align:center;
-color:white;
-height: 50px;
+color:white; 
 line-height: 50px;
 background:
 radial-gradient(black 15%, transparent 16%) 0 0,
@@ -105,8 +104,7 @@ cursor: pointer;
 .headerLinksContainer{
 margin:0 auto;
 width:50%;
-color:white;
-height: 50px;
+color:white; 
 line-height: 50px;
 }
 .headerLinksContainer span{
