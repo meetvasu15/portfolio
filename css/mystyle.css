@@ -96,9 +96,7 @@ background-size:16px 16px;
 }
 .mainContentContainer{
 	height:100%;
-border-top:2px solid white;
-}
-.mainContentContainer{ 
+border-top:1px solid white;
 }
  
 .statementContainer{
@@ -141,4 +139,15 @@ cursor: pointer;
 }
 .fixed{
 	position:fixed;
+}
+#hireMeContainer{
+	
+	padding-top:200px;
+}
+.hireMeBox{ 
+	margin:0 auto;
+	width:70%;
+	border:1px solid black;
+	border-radius:10px;
+	height:400px;
 }

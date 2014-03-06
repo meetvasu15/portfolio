@@ -7,7 +7,7 @@
 		$.scrollTo($("#"+divId+"Container"),1000);
 		}
   });
-  var headLoc = $('.headerLinksContainer').offset().top;
+  var headLoc = $('header').offset().top;
   $(window).bind('scroll', function () { 
 		if ($(window).scrollTop() > headLoc) { 
 			$('header').addClass('fixed');
