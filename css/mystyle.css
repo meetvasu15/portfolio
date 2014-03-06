@@ -3,6 +3,11 @@
 	padding:0;
 	font-family:Helvetica;
 }
+.introduction{
+position:relative;
+width: 100%; 
+border: 1px solid black;
+}
 .parallaxContainer{
 position: relative;
 width: 100%;
