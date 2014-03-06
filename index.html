@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="css/mystyle.css">
 <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
 </HEAD>
 <BODY> 
 <div id="loader-top" style="height:400px;   width:0px; position:fixed; top:0px; background: rgb(2, 150, 2); z-index: 1000;"></div> 
@@ -33,15 +34,78 @@ Check this guy out, he injects life into Web Pages. <br>
 <span id="hireMe">Why Hire Me?</span>
 <span id="resume">Resume</span>
 <span id="projects">Projects</span>
+<span id="contactMe">Contact Me</span>
+<span id="top"  onclick="onDownArrowClick()">Top</span>
 </div>
 </header>
 </nav>
 <div id="hireMeContainer">
-<div class="hireMeBox">
+<div class="subSectionHeader" style="font-family: 'Bad Script', cursive;">Why Hire Me?</div>
+<div class="hireMeBox"><!--
+<img class="hireMeImg" src="images/hireme.jpg">-->
+<ul>
+<li><strong>Quick in grabbing new technologies and concepts :</strong> Most of the technologies I know where not a part of my course work, I learned them when a project demanded and made the best out of it.</li></br>
+<li><strong>Learning new stuff never stops :</strong> If you aren't aware of what's out there already, you end up reinventing the wheel. There's a new front end technology almost everyday and I am constantly upgrading</li></br>
+<li><strong> oh, I almost forgot! </strong>my master's degree comes with a 4.0 GPA.</li></br>
+<li><strong>Real Industry Experience : </strong>I have been writing front end code for three years now for various companies. Its an amazing experience to work in teams of more than thirty UI developers taking strides towards the same goal of making the user experience "Awesome!". </li></br>
+<li><strong>I am not just a developer, I am an innovator :</strong> I don't just code stuff, I design and implement what my users understand and need. I have been in roles where I had to first understand the requirement, then propose a solution and finally implement it. It's fun!</li>
+
+</ul>
 </div>
 </div>
+
 <div id="resumeContainer">
-Lorem
+<div class="subSectionHeader"  style="font-family: 'Bad Script', cursive;">Professional Experience</div>
+<div class="resumeBox">
+<div class="experHeader"><div class="left">Web Development Intern</div><div class="right">June 2013 – Dec 2013</div></div> 
+<div class="experContent">
+<ol>
+<li>Developed the front end and backend of web applications used by more than a thousand employees at Freescale using PHP, jQuery, HTML5, Foundation, RequireJS, MySql for project management department.</li>
+<li>Proposed and implemented web solutions for identifying issues in Freescale Semiconductor’s fabrication process.</li>
+
+<li>Optimized response time of existing web services to fetch more than a million rows of data from multiple databases and visualized that data using Google Chart Visualization.</li>
+<li>Agile / Scrum environment</li></ol>
+</div>
+
+<div class="experHeader"><div class="left">Web Developer for ASU </div><div class="right">Aug 2012- May 2013</div></div>
+<div class="experContent">
+<ol>
+<li>Developed a web application to showcase lab’s ongoing projects using HTML5, Javascript, jQuery, PHP, MySQL.</li>
+<li>Responsible for setting up a cluster of tomcat instances for students to deploy and load test their web applications.</li>
+</ol>
+</div>
+
+
+<div class="experHeader"><div class="left">Web Developer</div><div class="right">May 2011- Aug 2012</div></div>
+<div class="experContent">
+<ol>
+<li>Developed cross browser web applications for browsing and reading books using Java, Hibernate, HTML5, CSS3, JavaScript, jQuery, Bootstrap. (Pearson’s Digital Library)</li>
+<li>Gained thorough understanding of Software Testing and Software Development life cycle.</li> 
+</li>
+</ol>
+</div>
+
+
+</div>
+</div>
+
+<div id="projectsContainer">
+<div class="subSectionHeader"  style="font-family: 'Bad Script', cursive;">Projects</div>
+<div class="projectBox"> 
+<div align="center" class="toiletRollButton" onclick="window.open('https://heal.asu.edu/wiki/index.php/Dependency_analysis','_blank');">
+Thesis: Cross Dependency Analysis of Front End Technologies (HTML5, JavaScript, CSS3)
+</div>
+<div align="center" class="toiletRollButton">
+Avatar, <br>A Voice Interactive LMS
+</div> 
+<div align="center" class="toiletRollButton">
+Cloud Video Conferencing in JavaScript
+</div> 
+<div align="center" class="toiletRollButton">
+Asthma Monitoring (Windows 8 native application)
+</div> 
+<div style="clear: both;"></div>
+</div>
 </div>
 </section> 
 <div class="mainContentContainer"></div>
