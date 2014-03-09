@@ -3,6 +3,7 @@
 <TITLE> Vasu Gupta </TITLE>
 <HEAD> 
 <link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
@@ -18,13 +19,13 @@ Check this guy out, he injects life into Web Pages. <br>
 </div></section>
 <section class="statementContainer">
 <div class="statementContainerInner">
-<span id="hireMe">He's not just another "New Grad", he's an experienced Front End Developer with a Master's Degree.</span> 
+<span >He's not just another "New Grad", he's an experienced Front End Developer with a Master's Degree.</span> 
 </div>
 </section>
 <section class="parallaxContainer" id="parallaxContainer" >
 <ul id="scene"  >  
-  <li class="layer" data-depth="0.10"><img style="width:120%;margin-left:-5%;" src="images/bottom_level_2_1.png"></li>
-  <li class="layer" data-depth="0.30"><img style="width:100%;" src="images/me_3_2.png"></li> 
+  <li class="layer" data-depth="0.10"><img style="width:120%;margin-left:-5%;" src="images/bottom_level_2_1.png" alt="background pic"></li>
+  <li class="layer" data-depth="0.30"><img style="width:100%;" src="images/me_3_2.png" alt="myself pic"></li> 
 </ul>  
 </section>
 <section class="mainContentContainer">
@@ -44,7 +45,7 @@ Check this guy out, he injects life into Web Pages. <br>
 <div class="hireMeBox"><!--
 <img class="hireMeImg" src="images/hireme.jpg">-->
 <ul>
-<li><strong>Quick in grabbing new technologies and concepts :</strong> Most of the technologies I know where not a part of my course work, I learned them when a project demanded and made the best out of it.</li></br>
+<li><strong>Quick in grabbing new technologies and concepts :</strong> Most of the technologies I know were not a part of my course work, I learned them when a project demanded and made the best out of it.</li></br>
 <li><strong>Learning new stuff never stops :</strong> If you aren't aware of what's out there already, you end up reinventing the wheel. There's a new front end technology almost everyday and I am constantly upgrading</li></br>
 <li><strong> oh, I almost forgot! </strong>my master's degree comes with a 4.0 GPA.</li></br>
 <li><strong>Real Industry Experience : </strong>I have been writing front end code for three years now for various companies. Its an amazing experience to work in teams of more than thirty UI developers taking strides towards the same goal of making the user experience "Awesome!". </li></br>
@@ -91,35 +92,58 @@ Check this guy out, he injects life into Web Pages. <br>
 
 <div id="projectsContainer">
 <div class="subSectionHeader"  style="font-family: 'Bad Script', cursive;">Projects</div>
-<div class="projectBox"> 
-<div align="center" class="toiletRollButton" onclick="window.open('https://heal.asu.edu/wiki/index.php/Dependency_analysis','_blank');">
+<div class="projectBox"> <div class="modalButtonOuter">
+<div  class="toiletRollButton" onclick="window.open('https://heal.asu.edu/wiki/index.php/Dependency_analysis','_blank');">
 Thesis: Cross Dependency Analysis of Front End Technologies (HTML5, JavaScript, CSS3)
-</div>
-<div align="center" class="toiletRollButton">
+</div></div><div class="modalButtonOuter">
+<div   class="toiletRollButton" onclick="createModalForProjects('avatar')">
 Avatar, <br>A Voice Interactive LMS
-</div> 
-<div align="center" class="toiletRollButton">
+</div> </div><div class="modalButtonOuter">
+<div  class="toiletRollButton" onclick="createModalForProjects('cloud')">
 Cloud Video Conferencing in JavaScript
-</div> 
-<div align="center" class="toiletRollButton">
+</div> </div><div class="modalButtonOuter">
+<div  class="toiletRollButton" onclick="createModalForProjects('aspira')">
 Asthma Monitoring (Windows 8 native application)
-</div> 
+</div> </div>
 <div style="clear: both;"></div>
 </div>
+<!-- Modal -->
+<div id="modalContainer">
 </div>
-</section> 
-<div class="mainContentContainer"></div>
+<!-- -->
+</div>
+</section>  
 <div style="clear: both;"></div>
+<div id="contactMeContainer">
+<div class="subSectionHeader"  style="font-family: 'Bad Script', cursive;">Contact Me</div> 
 <footer> 
 <div class="footerMainContainer">
-<a target="_blank" href="https://www.facebook.com/VasuGupta08">Facebook</a>
-<a target="_blank"  href="http://www.linkedin.com/pub/vasu-gupta/53/181/92">LinkedIn</a>
-<a  href="mailto:meetvasu15@gmail.com">Email</a>
-<a target="_blank"  href="VasuGupta.pdf">Resume</a>
-
+ <div class="footerBox">
+  
+ <div class="contactInfoObj" onclick="window.open('https://www.facebook.com/VasuGupta08','_blank');">
+	<img alt="facebook" class="footerIcons" src="images/Facebook.png"></a> 
+  </div> 
+  <div class="contactInfoObj" onclick="window.open('http://www.linkedin.com/pub/vasu-gupta/53/181/92','_blank');">
+	<img alt="LinkedIn" class="footerIcons" src="images/LinkedIn.png"> 
+ </div>
+   <div class="contactInfoObj">
+  <a target="_blank"  href="https://plus.google.com/+vasugupta"><img alt="Google plus" class="footerIcons"  src="images/gplus.png"></a> 
+  </div>
+  
+  <div class="contactInfoObj">
+  <a target="_blank"  href="VasuGupta.pdf"><img alt="Resume" class="footerIcons"  src="images/resume.png"></a> 
+  </div>
+   
+<div style="clear: both;"></div>
+ </div>
 </div>
-</footer>
+ 
+
+</footer><div class="belowFooterEmail">Feel free to drop me an email at <b><a href="mailto:meetvasu15@gmail.com">meetvasu15@gmail.com</a> | <a href="mailto:vgupta31@asu.edu">vgupta31@asu.edu</a></b></div>
+
+</div> 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+<script src="javascript/bootstrap.min.js"> </script>
 <script src="javascript/jquery.scrollTo-1.4.2-min.js"></script> 
 <script src="javascript/jquery.nicescroll.min.js"></script>
 <script src="javascript/jquery.parallax.js"></script>
